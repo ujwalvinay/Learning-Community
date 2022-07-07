@@ -85,6 +85,22 @@ p
     color: #4B64F2;
 }
 
+.brands
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+.brand
+{
+    width: 100px;
+}
+h6
+{
+    font-weight: 600;
+    padding: 1rem 0;
+}
 /* UnderLine Animation Effect */
 .hover-underline-animation {
     
@@ -108,3 +124,54 @@ p
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+@media screen and (max-width:540px) {
+    .body
+    {
+        height: 100%
+    }
+    .navbar
+    {
+        margin-top:7rem;
+        padding: 1rem 0;
+    }
+    .container
+    {
+        width: 95%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    h1
+    {
+        font-size: 9vw;
+        text-align: center;
+    }
+    p
+    {
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+    .social
+    {
+        justify-content: center;
+        font-size: 15px;
+        padding: 1rem;
+    }
+    .banner-img
+    {
+        width: 100%;
+    }
+    .brands
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .brand
+    {
+        width: 80px;
+    }
+}
